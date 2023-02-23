@@ -1,8 +1,8 @@
 ## Input
 Known facts:
-* Blockbuster.com is platform where
+* Blockbuster.com is a platform whereby
 * studios can rent movies online directly to consumers
-* web clients, as well as iOS and Android native clients
+* The platform has a web client, as well as iOS and Android native clients
 
 Assumptions:
 * The product is used by > 100K monthly viewers, > 1M sessions per month.
@@ -13,36 +13,37 @@ Mobile team has an ambition to build a new mobile app to fight competitors with 
 The goal is to define the adequate testing strategy to prove that the new UX is better than the old.
 
 Building a new mobile app is a big investment. The author strongly believes that such project should be planned
-and executed with the special attention to the value delivered. The risk main risk is that the new app might not affect 
+and executed with the special attention to the value delivered. The biggest risk is that the new app might not affect 
 the churn or even increase it. 
 
 Lean development principle can help to mitigate the risks. In line with these principles the author proposes 
 the following approach to testing. Please note that after each stage we can decide to drop the new app project.
 
-1. Conduct audience research of an old app (cohort analysis, churn analysis, users interview)
+1. Conduct audience research of the old app (cohort analysis, churn analysis, users interview).
    The goal of this exercise is to look at the problem from broader perspective. 
       1. What are the factors that drive churn?
       2. What is the value that our customers buy from us?
       3. In what context do they use the old application?
       4. Whom or what do we compete against in this context?
    It will help rank the new app project among other possible measure to reduce churn.
-2. Revisit tracking of product metrics in the old app
+2. Revisit tracking of product metrics in the old app.
    The goal is to make the old app comparable with the new app. It can be a broad set of metrics or some driving 
       ones. E.g.
       1. Streaming Quality 
       2. User Engagement 
       3. User Retention 
       4. User Feedback
+   
    From this exploration we can also get insights on how to prioritize the features for implementation in the new
       app.
-3. Build prototype and test it with the user in context
+3. Build prototype and test it with the user in context.
    The goal is to make sure that we are going in the right directions. It can be whiteframe or Figma.
-4. Build an MVP with tracking metrics and conduct closed testing
-   The goal is to use very ugly and not scalable version of the app to test one/two functions that are 
+4. Build an MVP with tracking metrics and conduct closed testing.
+   The goal is to use unpolished and not scalable version of the app to test one/two functions that are 
    the most important in for the user in their context. Closed testing is supposed to reduce the pressure on 
    the team and make it easier to release an imperfect version of the app. 
    From this point we can start collecting data for both apps.
-5. Release MMP and launch beta testing or/and A/B testing
+5. Release MMP and launch beta testing or/and A/B testing.
    We can randomly select users for the test and compare the metrics for 2 groups. We can start with the small number 
    of people and then gradually increase the size of the group that receives the new experience.
 6. Continuously monitor and improve new app for a defined period of time. 
@@ -51,14 +52,14 @@ the following approach to testing. Please note that after each stage we can deci
    based on the data.
 
 Side note: the project can be used to re-define the responsibilities between different services in the setup of 
-Blockbuster.com. It can allow for easier migration to the new app, and improve the performance metrics and speed of
-development on the old app.
+Blockbuster.com. It can allow for easier migration to the new app, improving performance metrics and speed of
+development of the old app.
 
 ## Question 2. The "Western" genre exploration
-There is an assumption that the "Western" genre is not doing very well. The question suggests that it might be demand or
-supply issue. The author likes to phrase the question differently: How the "Western" genre is not doing on our platform
-compared to the rest of the industry? This way of posting the question keeps the solution space open but also focuses us
-on business part of it: can we make more money on this genre or probably not?
+There is an assumption that "Western" genre is not doing very well. The question suggests that it might be demand or
+supply issue. The author likes to phrase the question openly: How the "Western" genre is doing on our platform? This way
+of posing the question keeps the solution space open but also focuses us on business part of it: 
+can we make more money on this genre or probably not?
 
 The author suggests to use scientific method and check several hypotheses:
 1. There is a difference in the engagement of people watching westerns.
@@ -73,7 +74,7 @@ The author suggests to use scientific method and check several hypotheses:
 3. Westerns are not popular on the platform.
    * How often do people search for western titles compared to other genres?
    * Is there a difference in ratings between genres and other genres on the platform?
-4. Westerns are generally not very popular as a genre in the World?
+4. Westerns are generally not very popular as a genre in the World.
    * How much attention westerns collect outside our platform? (IMDB, MovieWeb, …) 
       How is it compared to our genres? Compared to our platform?
    * Who are the people who usually watch westerns? Is it our target audience? Do we want it to be our target audience?
@@ -94,8 +95,8 @@ With more data more hypotheses can be formulated and checked.
 As a two-sided marketplace, platform should ensure that networking effects work. That mean that the platform aims
 to maintain the optimal rate of content creators and content consumers, so that consumers would have enough
 content they'd like to consume, content creators would have enough consumers to make profit out of partnership 
-with the platform. No less the platform would like to make money out of interactions on the platform, so platform will
-have its own set of metrics.
+with the platform. No less the platform would like to make money out of interactions between creators and consumers,
+so the platform will have its own set of metrics.
 
 The author proposes to track the following types of metrics for content producers: 
 1. Publisher acquisition
@@ -122,10 +123,10 @@ Platform itself can track:
 5. Gross merchandise volume (GMV)
 6. Net revenue (NR)
 
-The metrics specified are mostly very generic. Most of the platforms have their own, highly specialized for each 
-platform, set of "drivers" like "Mark Zuckerberg's Rule". According to the rule, if a user adds at least seven friends 
-within their first ten days on the platform, they are more likely to remain an active user. Ths rule would fall under
-`consumer engagement` set of metrics.
+The metrics specified are mostly very generic. Most of the platforms have their own set of "drivers", 
+highly specialized for each platform. For example, "Mark Zuckerberg's Rule". According to the rule, if a user adds 
+at least seven friends within their first ten days on the platform, they are more likely to remain an active user. 
+Ths rule would fall under `consumer engagement` set of metrics.
 
 ## Question 4. Two-step authentication
 The goal of this exercise is to evaluate whether the company should implement two-step authentication or not.
@@ -141,13 +142,13 @@ Let's formulate the hypothesis:
    * How much are we legally obliged to protect our clients from this risk? Can we move this responsibility somewhere?
    or insure it?
 2. Our users will gladly use two-step authentication.
-   * Will users sign up for the waiting list for the feature?
-   * If users see a pop-up suggesting enabling two-step authentication on login, how many of them will positively 
-   react to it?
-   * What would be engagement and satisfaction with the movies for 2 random groups A/B testing the feature?
+   * Will users join the waiting list for the feature?
+   * If users see a pop-up suggesting enabling two-step authentication on login, how many of them will respond 
+   positively to it?
+   * What would be the engagement and satisfaction with movies for 2 random groups A/B testing the feature?
 
 ## Question 5. Improve ads conversion with better targeting
-The question suggests to chose what would work better for targeting: user demographic or behavioural characteristics?
+The question suggests to choose what would work better for targeting: user demographic or behavioral characteristics?
 The author likes to phrase the question differently: how can we optimize the targeting with data?
 First 2 approaches seems decent, and we can add several more assumptions.
 
@@ -171,7 +172,7 @@ This one could become a full-fledged data science project. In this case, the aut
 Agile iterative process of delivering improvements and validating them in production with A/B testing. 
 
 ## Question 6. iOS vs Android mobile apps
-70% of our iOS users use the native client instead of the web client. However, only 40% of
+70% of iOS users use the native client instead of the web client. However, only 40% of
 Android users use the native client compared to the web client. The goal is to understand why.
 
 We can test a couple of hypotheses.
@@ -189,7 +190,7 @@ We can test a couple of hypotheses.
      Do they have different demographic, behavioral, contextual, or preferences factors?
      How is it for intersections between groups?
 3. Operational system is irrelevant and there is another reason.
-   * What do we know about people who don use our web client?
+   * What do we know about people who don't use our web client?
      What are there demographic, behavioral, contextual, or preferences factors?
      Why is it inconvenient for them to use mobile app?
 

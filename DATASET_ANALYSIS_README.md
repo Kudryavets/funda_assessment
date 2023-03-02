@@ -9,8 +9,8 @@ Input:
 
 Deliverables include:
 1. 2 working dashboards in Looker Studio with insights from the data
-   * [User 360](https://lookerstudio.google.com/reporting/51d46585-3db0-40e8-9944-ffdef7ca9648)
-   * [Movie trends](https://lookerstudio.google.com/reporting/7147c651-7cf7-4da5-ac74-a508d8d4f951)
+   * User 360
+   * Movie trends
 2. Data model schema
 3. Architecture diagram 
 4. 3 producer-aligned data views in BigQuery

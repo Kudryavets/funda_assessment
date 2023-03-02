@@ -1,6 +1,6 @@
 # Funda case
 
-Here you will find the case "Head of Data at Blockbuster.com".
+Here you will find the case "Head of Data at movie streaming company".
 The case consists of 2 parts:
 1. High level questions
 2. Dataset analysis
